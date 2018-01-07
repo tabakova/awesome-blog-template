@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Arimo|PT+Sans:400,700');
+/* Global Style */
+* {
+    box-sizing: border-box;
+}
+/* Html style */
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background: url(../img/pattern2.jpeg) no-repeat center fixed; 
+    background-size: cover;
+}
+/* Body style */
+body {      
+    font-family: "Roboto", "Arimo", "Montserrat", "Lato", "open sans";
+    font-size: 13px;
+    margin: 0;
+}
+/* Hr style */
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+}
+/* Add a blue background color to the top menu */
+.topmenu {
+    background-color: #07689f;
+    overflow: hidden;
+}
+/* Style the links inside the top menu  */
+.topmenu a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 25px;
+    margin: 12px 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+/* Header style */
+.topmenu .blog-header {
+    float: left;
+    color: #dce9e9;
+    text-align: left;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 16px;
+}
+/* Change the color of links on hover */
+.topmenu a:hover {
+    background-color: #083e5c;
+    color: #dce9e9;
+}
+/* Add a color to the active/current link */
+.topmenu a.active {
+    background-color: #083e5c;
+    color: white;
+}
+/* Style for the hamburger icon */
+.topmenu .icon {
+    display: none;
+    font-size: 14px;
+    padding-bottom: 14px;
+}
+/* Style for the nav links in the topmenu */
+.topmenu .links {
+    font-weight: bold;
+    margin-right: 12px;
+    float: right;
+}
+/* Adds a right border in the element */
+.b-r {
+    border-right: 1px solid #e7eaec;
+}
+/* Style for the blog subtitle */
+.text-muted {
+    color: #4193c4;
+    font-weight: 800;
+}
+/* Removes all margins */
+.no-margins {
+    margin: 0;
+}
+/* Larger fa icons */
+.fa {
+    font-size: 18px;
+}
+/* Animated user icon */
+#animated-icon {
+    transition: all 0.5s;
+}
+#animated-icon span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+#animated-icon span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    bottom: 2px;
+    right: -20px;
+    transition: 0.5s;
+}
+#animated-icon:hover span {
+    padding-right: 25px;
+}
+#animated-icon:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.social-media { margin-left: 20px; }
+/* Second-menu style */
+.container {
+    background-color: white;
+    margin: 70px 150px 0 150px;
+    display: ;
+}
+/* Hamburger icon style */
+.container-bars {
+    cursor: pointer;
+    padding: 7px 20px;
+    margin-top: 4px;
+}
+.bar1, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+.bar2 {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 2px;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-7px, 5px);
+    transform: rotate(-45deg) translate(-7px, 5px);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-5px, -5px);
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+.second-menu .b-l {
+    border-left: 1px solid #e7eaec;
+}
+.second-menu {
+    color: #fff;
+    overflow: hidden;
+    padding: 10px 0;
+}
+.second-menu a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.second-menu a:hover {
+    background-color: #083e5c;
+    color: white;
+}
+/* Add a color to the active/current link */
+.second-menu a.active {
+    background-color: #083e5c;
+    color: white;
+}
+.second-menu .container-search {
+  float: right;
+  margin: 4px 0;
+}
+.second-menu .container-search button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 3px;
+    margin-right: 16px;
+    background: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+.second-menu .container-search button:hover {
+    background: #ccc;
+}
+/* Style the search box inside the navigation bar */
+.second-menu input[type=text] {
+    padding: 6px;
+    margin: 4px 0 4px 20px;
+    border: none;
+}
+/* Style for the article image */
+.container-image {
+    margin: 0 150px;
+}
+#blog-image {
+    max-width: 100%;
+    height: auto;
+    left: 50%;
+}
+/* Style for the useg image in the left column*/
+#user-avatar {
+    border-radius: 50%;
+    width: 100px;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+/* Container for the middle column */
+.container-text {
+    background-color: white;
+    padding: 30px 15px;
+    margin: -10px 150px 70px 150px;
+}
+/* Centers the element */
+.text-center {
+    text-align: center;
+}
+/* Positions the element left */
+.text-left {
+    text-align: left;
+}
+/* Style for the comments button */
+.comments {
+    display: block;
+    background: #0c75a4;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+.comments:hover {
+    background-color: #083e5c;
+    color: #dce9e9;
+}
+/* Middle column heading */
+.article-header {
+    font-size: 15px;
+}
+.blue-hr {
+    border: 1px solid #a8d0e9;
+    background-color: #a8d0e9;
+    margin: 50px 0;
+}
+/* Removing underline */
+.row a {
+    text-decoration: none;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Right column heading */
+.text-muted-map {
+    margin-top: 0;
+    text-transform: uppercase;
+}
+.p-left {
+    padding-left: 15px;
+}
+/* Style for the dropdown menu */
+.dropdown-menu {
+    float: left;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-menu a:hover {
+    background-color: #083e5c;
+}
+.show {display: block;}
+
+/* Style for to-top button */
+#to-top-btn {
+    float: right;
+    color: #116d96;
+    background-color: #a8d0e9;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-weight: 600;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+#to-top-btn:hover {
+    background-color: #083e5c;
+    color: #dce9e9;
+
+}
+.back-to-top .blue-hr {
+    margin: 0;
+}
+
+/* Respinsive styles */
+@media only screen and (min-width: 768px) {
+    /* For desktops */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 600px) {
+    /* For mobile phones */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). 
+Show the link that contains should open and close the topmenu (.icon) */
+@media screen and (max-width: 600px) {
+    .topmenu a:not(:first-child) {display: none;}
+    .topmenu a.icon {
+        float: right;
+        display: block;
+  }
+    .topmenu a.b-r {display: none;}
+    .container, .container-image, .container-text {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .topmenu .blog-header {padding: 15px;}
+}
+/* The "responsive" class is added to the topmenu with JS when the user clicks on the icon. 
+This class makes the topmenu look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 768px) {
+    .topmenu.responsive {position: relative;}
+    .topmenu.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+  }
+    .topmenu.responsive a {
+        float: left;
+        display: block;
+        text-align: left;
+  }
+
+}
+@media screen and (max-width: 768px) {
+    .container, .container-image, .container-text {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* Second-menu */
+@media screen and (max-width: 600px) {
+    .second-menu .container-search {
+        float: none;
+    }
+    .second-menu a, .second-menu input[type=text], .second-menu .container-search button {
+        float: left;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        font-size: 14px;
+    }
+    .second-menu input[type=text]:hover {
+        border: 1px solid #ccc;  
+    }
+}
